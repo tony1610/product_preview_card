@@ -1,0 +1,150 @@
+:root {
+    --color-000: hsl(0, 0%, 100%);
+    --color-100: hsl(30, 38%, 92%);
+    --color-200: hsl(158, 36%, 37%);
+    --color-500: hsl(228, 12%, 48%);
+    --color-700: hsl(212, 21%, 14%);
+  
+    font-size: 62.5%;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* //////////////////////////////////////////////
+                                           GLOBAL / TYPO
+    //////////////////////////////////////////////*/
+
+body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+
+    background-color: var(--color-100);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 3rem;
+}
+  /* //////////////////////////////////////////////
+                                           Container
+    //////////////////////////////////////////////*/
+
+.container{
+    background-color: var(--color-000);
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+@media screen and (min-width: 750px) {
+    .container {
+      display:flex;
+      max-width: 60rem;
+    }
+  }
+
+/* //////////////////////////////////////////////
+                                           IMAGE
+    //////////////////////////////////////////////*/
+
+    .image__mobile{
+        max-width: 100%;
+    }
+    .image__desktop{
+        display: none;
+    }
+    @media screen and (min-width: 750px) {
+        .image__mobile {
+          display:none;
+        }
+        .image__desktop{
+            display: block;
+            max-width: 100%;
+        }
+      }
+
+    /* //////////////////////////////////////////////
+                                           MAIN
+    //////////////////////////////////////////////*/
+
+    .main{
+        padding: 2rem;
+    }
+    .main-text{
+        margin-bottom: 3rem;
+    }
+    .perfume{
+        color: var(--color-500);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .tittle{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: var(--color-700);
+        line-height: 1;
+
+        margin-bottom: 1rem;
+    }
+    .description-text{
+        color: var(--color-500);
+        max-width: 50rem;
+    }
+    @media screen and (min-width: 750px) {
+        .main{
+            padding: 5rem 2rem 5rem;
+        }
+        
+      }
+
+
+    /* //////////////////////////////////////////////
+                                           price
+    //////////////////////////////////////////////*/
+
+    .price{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .discount-price{
+        font-size: 4rem;
+        font-family: 'Fraunces', serif;
+        color: var(--color-200);
+        margin-right: 2rem;
+    }
+    .regular-price{
+        text-decoration: line-through;
+        color: var(--color-500);
+    }
+    .btn{
+        color: var(--color-000);
+        font-size: 1.7rem;
+        font-weight: 700;
+        border: none;
+        background: var(--color-200);
+
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        width: 100%;
+        padding: 2rem;
+        margin-top: 1.5rem;
+
+        border-radius: 1rem;
+    }
