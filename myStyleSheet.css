@@ -150,6 +150,7 @@ body{
         border-radius: 1rem;
 
         transition: background-color ease-in-out 250ms;
+        cursor: pointer;
     }
 
     .btn:hover,
